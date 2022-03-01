@@ -6,7 +6,6 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
-import java.util.stream.Collectors;
 
 @Service
 @AllArgsConstructor
@@ -16,8 +15,7 @@ public class DepartmentService {
 
     public List<Department> getAllDepartment(){
         log.info("Fetching all departments");
-        return departmentRepository.findAll()
-                .stream().collect(Collectors.toList());
+        return departmentRepository.findAll().stream().toList();
     }
 
     public Department getDepartment(String id){

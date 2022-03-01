@@ -2,11 +2,9 @@ package com.fixdecode.departmentservice.department;
 
 import com.fixdecode.departmentservice.util.ResponseMessage;
 import lombok.AllArgsConstructor;
-import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.List;
 import java.util.Map;
 
 import static org.springframework.http.HttpStatus.CREATED;

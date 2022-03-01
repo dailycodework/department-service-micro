@@ -1,9 +1,6 @@
 package com.fixdecode.departmentservice.department;
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.Column;
@@ -13,6 +10,7 @@ import javax.persistence.Id;
 
 @Getter
 @Setter
+@ToString
 @Entity
 @AllArgsConstructor
 @NoArgsConstructor
@@ -25,4 +23,5 @@ public class Department {
     private String name;
     private String address;
     private String code;
+
 }
